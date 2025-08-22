@@ -2,13 +2,24 @@
 
 A web application that generates AI-powered stock performance reports based on recent market data. Users can input stock tickers and receive comprehensive trading recommendations written in an engaging, analyst-style format.
 
+## Live Demo
+
+**Deployed Application**: [https://dodgydaves-stockrecos.pages.dev/](https://dodgydaves-stockrecos.pages.dev/)
+
+## Screenshots
+
+<img src="./images/screenshot1.jpg" alt="Application Interface" width="300">
+<img src="./images/screenshot2.jpg" alt="Example Response" width="300">
+
 ## Features
 
 - **Multi-Stock Analysis**: Add multiple stock tickers for comparative analysis
 - **Real-Time Data**: Fetches stock data from Polygon API for the past 3 days
 - **AI-Generated Reports**: Creates personalized trading reports using OpenAI's language model
 - **Professional Recommendations**: Provides buy/hold/sell guidance based on price movements
-- **Responsive Interface**: Clean, user-friendly design with loading states and error handling
+- **Performance Optimized**: Includes caching and rate limiting for improved response times
+- **Security Enhanced**: Rate limiting and request validation to prevent abuse
+- **Responsive Interface**: Functional design with loading states and error handling
 
 ## How It Works
 
@@ -26,9 +37,15 @@ A web application that generates AI-powered stock performance reports based on r
 - Responsive loading states
 
 ### APIs
-- **Polygon API**: Stock market data retrieval
-- **OpenAI API**: AI-powered report generation
-- **Cloudflare Workers**: API proxy for secure key management
+- **Polygon API**: Stock market data retrieval with caching for improved performance
+- **OpenAI API**: AI-powered report generation with rate limiting protection
+- **Cloudflare Workers**: API proxy for secure key management and request optimization
+
+### Performance & Security
+- **Caching**: Implemented response caching to reduce API calls and improve load times
+- **Rate Limiting**: Request throttling to prevent abuse and ensure service availability
+- **Request Validation**: Input sanitization and ticker format validation
+- **Error Recovery**: Graceful handling of API failures with user feedback
 
 ### Data Flow
 ```
@@ -70,6 +87,10 @@ Reports are generated in an engaging, conversational tone that:
 3. Update the worker URLs in the fetch requests
 4. Serve the application via a web server
 5. Enter stock tickers and generate reports
+
+## Design Notes
+
+The application prioritizes functionality over visual design. The focus has been on building a robust backend architecture with proper caching, security measures, and reliable data processing rather than extensive UI/CSS styling. The interface is intentionally minimal to demonstrate the core functionality of AI-powered stock analysis.
 
 ## Security Notes
 
