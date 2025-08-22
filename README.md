@@ -4,7 +4,8 @@ A web application that generates AI-powered stock performance reports based on r
 
 ## Live Demo
 
-**Deployed Application**: [https://dodgydaves-stockrecos.pages.dev/](https://dodgydaves-stockrecos.pages.dev/)
+**Deployed Application**: 
+<a href="https://dodgydaves-stockrecos.pages.dev/" target="_blank">https://dodgydaves-stockrecos.pages.dev/</a>
 
 ## Screenshots
 
