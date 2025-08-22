@@ -98,3 +98,6 @@ The application prioritizes functionality over visual design. The focus has been
 - API keys are managed server-side through Cloudflare Workers
 - No sensitive credentials are exposed in the frontend code
 - CORS is handled at the worker level for secure cross-origin requests
+
+### Credits
+This project was developed as part of <a href="https://scrimba.com/the-ai-engineer-path-c02v">Scrimba's AI Engineer Path</a>, a comprehensive course covering modern AI integration techniques, API management, and full-stack development with AI services.
